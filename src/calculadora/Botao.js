@@ -1,14 +1,17 @@
 import React from "react";
-import { Text, View, StyleSheet, TouchableHighlight, Dimensions } from "react-native";
+import { Text, StyleSheet, TouchableHighlight } from "react-native";
 
 const style = StyleSheet.create({
     butao: {
+        fontSize: 28,
+        fontWeight: "bold",
         backgroundColor: "gray",
-        width: 60,
-        height: 60,
+        width: 95,
+        height: 95,
         borderColor: "black",
         borderWidth: 1,
-        textAlign: "center"
+        textAlign: "center",
+        padding: 20
     }
 })
 
@@ -16,10 +19,9 @@ const style = StyleSheet.create({
 export default props => {
 
     return (
+
         <TouchableHighlight onPress={() => {}}>
-            <View style={style.butao}>
-                <Text>{props.valor}</Text>
-            </View>
+            <Text style={style.butao}>{props.valor}</Text>
         </TouchableHighlight>
     )
 }

@@ -3,17 +3,15 @@ import { View, Text, Button, Alert } from "react-native";
 // import MeuTexto from "./components/MeuTexto";
 // import MinMax from "./components/MinMax";
 // import Contador from "./components/Contador";
-import Botao from "./components/Botao";
+// import Botao from "./calculadora/Botao";
+// import Display from "./calculadora/Display";
 import Estilo from "./estilo";
+import Contador from "./contador/Contador";
 
 
 export default () => (
     <View style={Estilo.App}>
-        <Botao valor="1"/>
-        <Botao valor="2"/>
-        <Botao valor="3"/>
-        <Botao valor="4"/>
-
+        <Contador inicial={5} />
         {/* <Contador inicial={10}/>
         <MinMax min={4} max={15}/>
         <MinMax min={8} max={30}/>
